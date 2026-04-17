@@ -1,3 +1,13 @@
+<html>
+<head>
+  <title>JNTUH R25 Notes</title>
+</head>
+<body>
+<head>
+  <meta name="google-site-verification" content="N-TqnvNFVMi0_7dQ" />
+  <title>JNTUH R25 Notes</title>
+</head>
+
 # JNTUH R25 Notes
 
 A web application for sharing and accessing JNTUH R25 study materials (CSE & AIML). Students can upload PDF notes that are stored persistently and made available for others to view.
