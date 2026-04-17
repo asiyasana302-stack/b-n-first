@@ -1,0 +1,36 @@
+import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
+
+
+import '../styles.css'
+
+export const Route = createRootRoute({
+  head: () => ({
+    meta: [
+      {
+        charSet: 'utf-8',
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1',
+      },
+      {
+        title: 'JNTUH R25 Notes',
+      },
+    ],
+  }),
+  shellComponent: RootDocument,
+})
+
+function RootDocument({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <head>
+        <HeadContent />
+      </head>
+      <body className="min-h-screen">
+        <main>{children}</main>
+        <Scripts />
+      </body>
+    </html>
+  )
+}
