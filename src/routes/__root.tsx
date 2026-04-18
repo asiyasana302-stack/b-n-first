@@ -1,15 +1,18 @@
-import { Head } from 'next/document';
+import { createRootRoute } from 'somewhere';
 
-export default function Document() {
-  return (
-    <Html>
-      <Head>
-        <meta name="google-site-verification" content="your-verification-code-here" />
-        {/* Existing meta tags */}
-      </Head>
-      <body>
-        {/* Your content goes here */}
-      </body>
-    </Html>
-  );
-}
+export const rootRoute = createRootRoute({
+  ...
+  head: {
+    ...
+    meta: [
+      { name: 'google-site-verification', content: 'N--TqnvNFVMi0_7dQCdhGSiCzMT1gQLAKSoQfLkOo3o' },
+    ],
+  },
+});
+
+// In the appropriate HTML file or component for the head element
+export const HtmlHead = () => (
+  <head>
+    <meta name="google-site-verification" content="N--TqnvNFVMi0_7dQCdhGSiCzMT1gQLAKSoQfLkOo3o" />
+  </head>
+);
